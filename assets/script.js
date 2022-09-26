@@ -16,17 +16,17 @@ $(document).ready(function (){
             var timeBlock = parseInt($(this).attr('id').split('hour')[1]);
 
             if (timeBlock < currentTime){
-                $(this).removeClass('later');
-                $(this).removeClass('now');
-                $(this).addClass('then');
+                $(this).removeClass('future');
+                $(this).removeClass('present');
+                $(this).addClass('past');
             } else if (timeBlock === currentTime){
-                $(this).removeClass('later');
-                $(this).removeClass('now');
-                $(this).addClass('then');
+                $(this).removeClass('future');
+                $(this).removeClass('present');
+                $(this).addClass('past');
             } else {
-                $(this).removeClass('later');
-                $(this).removeClass('now');
-                $(this).addClass('then');
+                $(this).removeClass('future');
+                $(this).removeClass('present');
+                $(this).addClass('past');
             }
         })
     }
